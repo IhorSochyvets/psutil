@@ -4,11 +4,11 @@ This script was used for educational purposes.
 It shows CPU and Memory information of the OS. 
  
  # Dockerfile
-Below is output of Dockerfile:
-FROM python:3
-ADD metrics /
-RUN pip install psutil
+The content of Dockerfile can be found at:
+https://github.com/kongurua/psutil/blob/master/Dockerfile
+
 CMD ["python", "./metrics", "cpu"]  # use this command for CPU monitoring ("cpu" is argument for "metrics" script)
+
 CMD ["python", "./metrics", "mem"]  # use this command for MEMORY monitoring ("mem" is argument for "metrics" script)
 
  # Building Docker image
